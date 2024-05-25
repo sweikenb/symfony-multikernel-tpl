@@ -1,10 +1,17 @@
 {
-    "type": "project",
-    "license": "proprietary",
+    "name": "sweikenb/symfony-multikernel-tpl",
+    "authors": [
+        {
+            "name": "Simon Schröer",
+            "email": "code@schroeer.me"
+        }
+    ],
+    "type": "template",
+    "license": "MIT",
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
-        "php": ">=8.3",
+        "php": ">=8.2",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "ext-curl": "*",
