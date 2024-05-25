@@ -1,0 +1,13 @@
+parameters:
+
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  Shared\:
+    resource: '%kernel.shared_dir%/src/'
+    exclude:
+      - '%kernel.shared_dir%/src/DependencyInjection/'
+      - '%kernel.shared_dir%/src/Entity/'
+      - '%kernel.shared_dir%/src/MultiKernel.php'

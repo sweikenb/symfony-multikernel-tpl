@@ -1,0 +1,9 @@
+twig:
+  file_name_pattern: '*.twig'
+  paths:
+    '%kernel.project_dir%/templates': 'kernel'
+    '%kernel.shared_dir%/templates': 'shared'
+
+when@test:
+  twig:
+    strict_variables: true

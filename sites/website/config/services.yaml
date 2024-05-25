@@ -1,0 +1,16 @@
+imports:
+  - { resource: ../../_shared/config/services.yaml }
+
+parameters:
+
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  Website\:
+    resource: '../src/'
+    exclude:
+      - '../src/DependencyInjection/'
+      - '../src/Entity/'
+      - '../src/WebsiteKernel.php'
