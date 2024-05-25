@@ -45,7 +45,7 @@ abstract class MultiKernel extends BaseKernel
 
     public function getCacheDir(): string
     {
-        return $this->getRootDir() . '/var/' . $this->getKernelDir() . '/cache/' . $this->environment;
+        return $this->getRootDir() . '/var/' . $this->getKernelName() . '/cache/' . $this->environment;
     }
 
     public function getBuildDir(): string
@@ -55,7 +55,7 @@ abstract class MultiKernel extends BaseKernel
 
     public function getLogDir(): string
     {
-        return $this->getRootDir() . '/var/' . $this->getKernelDir() . '/log';
+        return $this->getRootDir() . '/var/' . $this->getKernelName() . '/log';
     }
 
     private function getConfigDir(): string
