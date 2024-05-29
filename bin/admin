@@ -13,6 +13,7 @@ if (!is_file(dirname(__DIR__) . '/vendor/autoload_runtime.php')) {
 }
 
 require_once dirname(__DIR__) . '/vendor/autoload_runtime.php';
+require_once __DIR__ . '/../sites/admin/config/boostrap.php';
 
 return function (array $context) {
     $kernel = new AdminKernel($context['APP_ENV'], (bool)$context['APP_DEBUG']);
